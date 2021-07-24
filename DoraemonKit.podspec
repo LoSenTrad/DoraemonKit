@@ -34,6 +34,8 @@ Pod::Spec.new do |s|
     ss.dependency 'GCDWebServer/WebUploader'
     ss.dependency 'GCDWebServer/WebDAV'
     ss.dependency 'FMDB'
+    ss.dependency 'AFNetworking'
+
   end
 
   s.subspec 'WithLogger' do |ss| 
