@@ -24,6 +24,9 @@ Pod::Spec.new do |s|
 
   s.default_subspec = 'Core'
   
+  s.dependency 'AFNetworking'
+
+  
   s.subspec 'Core' do |ss| 
     ss.source_files = 'iOS/DoraemonKit/Src/Core/**/*{.h,.m,.c,.mm}'
     ###ss.vendored_frameworks = 'DoraemonKit/Lib/CrashReporter.framework'
@@ -34,7 +37,6 @@ Pod::Spec.new do |s|
     ss.dependency 'GCDWebServer/WebUploader'
     ss.dependency 'GCDWebServer/WebDAV'
     ss.dependency 'FMDB'
-    ss.dependency 'AFNetworking'
 
   end
 
